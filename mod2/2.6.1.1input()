@@ -1,0 +1,24 @@
+## The input() function
+
+print() sends data to the console, meanwhile input() gets data from the user and returns that data to the program.
+
+## The input() function with an argument
+
+the input() function can also prompt the user by passing in an argument of the prompt you want the user to see
+
+anything = input("Tell me anything...")
+print("Hmm...", anything, "...Really?")
+
+## the result of the input() function
+
+^ ...is a string which contains the users input
+
+## The input() function - prohibited operations
+
+anything = input("Enter a number: ")
+something = anything ** 2.0
+print(anything, "to the power of 2 is", something)
+
+This is prohibited.
+
+This should be obvious - can you predict the value of "to be or not to be" raised to the power of 2? We can't. Python can't either.
