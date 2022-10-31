@@ -9,3 +9,9 @@
 print("My name is", "Python.")
 print("Monty Python.")
 ->The way in which we are passing the arguments into the print() function is the most common in Python, and is called the positional way (this name comes from the fact that the meaning of the argument is dictated by its position, e.g., the second argument will be outputted after the first, not the other way round).
+
+-> **binary system** - the system computers use for storing numbers, and that they can perform any operation upon them
+
+-> **an operator** is a symbol of the programming language, which is able to operate on values.
+
+->
