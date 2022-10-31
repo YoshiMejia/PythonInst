@@ -11,4 +11,30 @@ Interpretation - You or any other user of the code can translate the source prog
 - if the interpreter finds an error, it exits immediately and results in an *error message* 
 
 ## 1.6 Compilation vs. interpretation - advantages and disadvantages
-Python is an interpreted language, to run a program in Pythin we'll need the Python Interpreter. 
+Python is an interpreted language, to run a program in Python we'll need the Python Interpreter. 
+
+##1.2.2 Python goals
+-an **easy and intuitive** language just as powerful as those of the major competitors;
+-**open source**, so anyone can contribute to its development;
+-code that is as **understandable** as plain English;
+-**suitable for everyday tasks**, allowing for short development times.
+
+##1.2.4 Python Rivals
+-Perl – a scripting language originally authored by Larry Wall;
+-Ruby – a scripting language originally authored by Yukihiro Matsumoto.
+
+Perl is more traditional&conservative than Python and resembles C.
+
+Ruby, on the other hand, is more innovative than Python. 
+
+
+## Why not Python?
+Despite Python's growing popularity, there are still some niches where Python is absent, or is rarely seen:
+
+-low-level programming (sometimes called "close to metal" programming): if you want to implement an extremely effective driver or graphical engine, you wouldn't use Python;
+-applications for mobile devices: although this territory is still waiting to be conquered by Python, it will most likely happen someday.
+
+
+
+
+
