@@ -22,3 +22,46 @@ print(anything, "to the power of 2 is", something)
 This is prohibited.
 
 This should be obvious - can you predict the value of "to be or not to be" raised to the power of 2? We can't. Python can't either.
+
+## Type Casting
+
+Python offers 2 simple functions to specify a type of data and solve this problem-- int() and float()
+
+- the int() function takes one argument (e.g., a string: int(string)) and tries to convert it into an integer; if it fails, the whole program will fail too (there is a workaround for this situation, but we'll show you this a little later);
+- the float() function takes one argument (e.g., a string: float(string)) and tries to convert it into a float (the rest is the same).
+
+anything = float(input("Enter a number: "))
+something = anything ** 2.0
+print(anything, "to the power of 2 is", something)
+
+## String operators 
+
+# Concatenation
+
+The + (plus) sign, when applied to two strings, becomes a concatenation operator:
+
+string + string
+
+It simply concatenates (glues) two strings into one. 
+
+# Replication
+
+The * (asterisk) sign, when applied to a string and number (or a number and string, as it remains commutative in this position) becomes a replication operator:
+
+string * number
+number * string
+
+
+It replicates the string the same number of times specified by the number.
+
+For example:
+
+"James" * 3 gives "JamesJamesJames"
+3 * "an" gives "ananan"
+5 * "2" (or "2" * 5) gives "22222" (not 10!)
+
+# Type conversion: str()
+
+You can also convert a number into a string
+str(number)
+
