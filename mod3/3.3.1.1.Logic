@@ -1,0 +1,12 @@
+## Logican Operators
+
+# and
+and is a keyword and a binary operator with low priority. It allows us to code complex conditions without the use of parentheses like this one:
+
+counter > 0 and value == 100
+
+# or
+ It's a binary operator with a lower priority than and (just like + compared to *)
+ 
+ # not
+ It's a unary operator performing a logical negation. Its operation is simple: it turns truth into falsehood and falsehood into truth. Its priority is high
