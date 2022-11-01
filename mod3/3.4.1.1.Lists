@@ -45,7 +45,7 @@ A typical method invocation usually looks like this:
 
 result = data.method(arg)
 
-#Adding elements to a list: append() and insert()
+# Adding elements to a list: append() and insert()
 
 list.append(value)
 
@@ -54,5 +54,108 @@ append() takes its argument's value and puts it at the end of the list which own
 insert() method is a bit smarter - it can add a new element at any place in the list, not only at the end.
 
 list.insert(location, value)
+
+using insert() to create a list w values in reverse order
+my_list = []  # Creating an empty list.
+
+for i in range(5):
+    my_list.insert(0, i + 1)
+
+print(my_list)
+
+# Making use of lists with the for loop
+
+my_list = [10, 1, 8, 3, 5]
+total = 0
+
+for i in my_list:
+    total += i
+
+print(total)
+
+# Question: how can you swap the values of two variables?
+
+variable_1 = 1
+variable_2 = 2
+
+variable_2 = variable_1
+variable_1 = variable_2
+
+
+If you do something like this, you would lose the value previously stored in variable_2. Changing the order of the assignments will not help. You need a third variable that serves as an auxiliary storage.
+
+This is how you can do it:
+variable_1 = 1
+variable_2 = 2
+
+auxiliary = variable_1
+variable_1 = variable_2
+variable_2 = auxiliary
+
+
+Python offers a more convenient way of doing the swap - take a look:
+
+variable_1 = 1
+variable_2 = 2
+
+variable_1, variable_2 = variable_2, variable_1
+
+## Key takeaways
+
+1. The list is a type of data in Python used to store multiple objects. It is an ordered and mutable collection of comma-separated items between square brackets, e.g.:
+
+my_list = [1, None, True, "I am a string", 256, 0]
+
+
+2. Lists can be indexed and updated, e.g.:
+
+my_list = [1, None, True, 'I am a string', 256, 0]
+print(my_list[3])  # outputs: I am a string
+print(my_list[-1])  # outputs: 0
+
+my_list[1] = '?'
+print(my_list)  # outputs: [1, '?', True, 'I am a string', 256, 0]
+
+my_list.insert(0, "first")
+my_list.append("last")
+print(my_list)  # outputs: ['first', 1, '?', True, 'I am a string', 256, 0, 'last']
+
+
+3. Lists can be nested, e.g.:
+
+my_list = [1, 'a', ["list", 64, [0, 1], False]]
+
+You will learn more about nesting in module 3.1.7 - for the time being, we just want you to be aware that something like this is possible, too.
+
+4. List elements and lists can be deleted, e.g.:
+
+my_list = [1, 2, 3, 4]
+del my_list[2]
+print(my_list)  # outputs: [1, 2, 4]
+
+del my_list  # deletes the whole list
+
+
+Again, you will learn more about this in module 3.1.6 - don't worry. For the time being just try to experiment with the above code and check how changing it affects the output.
+
+5. Lists can be iterated through using the for loop, e.g.:
+
+my_list = ["white", "purple", "blue", "yellow", "green"]
+
+for color in my_list:
+    print(color)
+
+
+6. The len() function may be used to check the list's length, e.g.:
+
+my_list = ["white", "purple", "blue", "yellow", "green"]
+print(len(my_list))  # outputs 5
+
+del my_list[2]
+print(len(my_list))  # outputs 4
+
+
+7. A typical function invocation looks as follows: result = function(arg), while a typical method invocation looks like this:result = data.method(arg).
+
 
 
